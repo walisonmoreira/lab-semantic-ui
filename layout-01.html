@@ -9,16 +9,14 @@
 
 <!-- <link rel="stylesheet" type="text/css" href="lib/semantic/components/reset.min.css"> -->
 <!-- <link rel="stylesheet" type="text/css" href="lib/semantic/components/site.min.css"> -->
-<!-- <link rel="stylesheet" type="text/css" href="lib/semantic/components/button.min.css"> -->
 <!-- <link rel="stylesheet" type="text/css" href="lib/semantic/components/menu.min.css"> -->
 <!-- <link rel="stylesheet" type="text/css" href="lib/semantic/components/sidebar.min.css"> -->
-<!-- <link rel="stylesheet" type="text/css" href="lib/semantic/components/icon.min.css"> -->
 <!-- <link rel="stylesheet" type="text/css" href="lib/semantic/components/segment.min.css"> -->
 <!-- <link rel="stylesheet" type="text/css" href="lib/semantic/components/header.min.css"> -->
 
 <style type="text/css">
 
-  .main {
+  .app {
     margin: 1em;
   }
 
@@ -31,7 +29,7 @@
 </head>
 <body>
 
-  <div class="main">
+  <div class="app">
 
     <div class="ui top attached menu">
       <a class="item">Menu</a>
@@ -57,24 +55,20 @@
       </div>
       <div class="pusher">
         <div class="ui basic segment">
-          <h3 class="ui header">Application Content</h3>
+          <h3 class="ui header">Content</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <p>
-            <div class="huge ui button">Botão</div>
-          </p>
         </div>
       </div>
     </div>
   </div>
 
   <script type="text/javascript">
-    $('.main .ui.sidebar')
-      .sidebar({context: $('.main .bottom.segment')})
-      .sidebar('attach events', '.main .menu .item');
-
+    $('.app .ui.sidebar')
+      .sidebar({context: $('.app .bottom.segment')})
+      .sidebar('attach events', '.app .menu .item');
   </script>
 
 </body>
