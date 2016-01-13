@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Layout 02</title>
+    <link rel="stylesheet" type="text/css" href="lib/semantic/semantic.min.css">
+    <style type="text/css">
+        .conteudo{
+            height: 200px;
+            background: gray;
+        }
+    </style>
+
+    <script src="lib/jquery/jquery.min.js"></script>
+
+    <script src="lib/semantic/semantic.min.js"></script>
+
+</head>
+
+<body>
+<nav class="ui labeled icon menu">
+    <a class="item">
+        <i class="gamepad icon"></i>
+        Games
+    </a>
+    <a class="item">
+        <i class="video camera icon"></i>
+        Channels
+    </a>
+    <a class="item active">
+        <i class="video play icon"></i>
+        Videos
+    </a>
+</nav>
+<main>
+    <div class="ui grid stackable container">
+        <div class="four wide column"></div>
+        <div class="four wide column"></div>
+        <div class="four wide column"></div>
+        <div class="four wide column"></div>
+        <div class="four wide column"></div>
+        <div class="four wide column"></div>
+        <div class="four wide column"></div>
+        <div class="four wide column"></div>
+    </div></main>
+</body>
+</html>
+<script>
+    $(".four.wide.column").html('<div class="conteudo"></div>');
+</script>
