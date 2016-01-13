@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <title>Layout 02</title>
+    <title>Layout 03</title>
     <link rel="stylesheet" type="text/css" href="lib/semantic/semantic.min.css">
     <style type="text/css">
         .c1 {
@@ -17,14 +17,33 @@
             background: #bbbbbb;
         }
 
-
         .cus-dashboard-container {
             padding: 0 1em;
+        }
+
+        .cus-content-container {
+            margin-left: 260px;
+        }
+
+        .cus-content-container.default-size{
+            margin-left: 0;
+        }
+        #sidebar{
+            top: 41px;
+            z-index: 0;
         }
 
         @media only screen and (max-width: 767px) {
             .cus-dashboard-container {
                 padding: 0;
+            }
+
+            .cus-content-container {
+                margin: 1.5em;
+            }
+
+            #sidebar {
+                display: none;
             }
         }
     </style>
@@ -36,33 +55,58 @@
 </head>
 
 <body>
-<main class="ui fluid container cus-dashboard-container">
-    <div id="a1" class="ui four column doubling stackable grid">
-        <div class="column"></div>
-        <div class="column"></div>
-        <div class="column"></div>
-        <div class="column"></div>
-        <div class="column"></div>
-        <div class="column"></div>
-        <div class="column"></div>
-        <div class="column"></div>
-        <div class="column"></div>
+<div class="ui top fixed menu">
+    <a id="toggleMenuButton" class="item"><i class="sidebar icon"></i> </a>
+</div>
+
+<div id="sidebar" class="ui vertical inverted left visible sidebar menu">
+    <a class="item">
+        <i class="home icon"></i>
+        Home
+    </a>
+    <a class="item">
+        <i class="block layout icon"></i>
+        Topics
+    </a>
+</div>
+<div class="cus-content-container">
+    <div class="ui fluid container cus-dashboard-container">
+        <div id="a1" class="ui four column doubling stackable grid">
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+        </div>
+        <div id="a2" class="ui eight column doubling stackable grid">
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+        </div>
     </div>
-    <div id="a2" class="ui eight column doubling stackable grid">
-        <div class="column"></div>
-        <div class="column"></div>
-        <div class="column"></div>
-        <div class="column"></div>
-        <div class="column"></div>
-        <div class="column"></div>
-        <div class="column"></div>
-        <div class="column"></div>
-        <div class="column"></div>
-    </div>
-</main>
+</div>
+
 </body>
 </html>
 <script>
     $("#a1 > .column").html('<div class="c1"></div>');
     $("#a2 > .column").html('<div class="c2"></div>');
+
+    $("#toggleMenuButton").click(function () {
+        $("#sidebar").toggleClass("visible");
+        $(".cus-content-container").toggleClass("default-size");
+    });
+
+
+
 </script>

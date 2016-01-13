@@ -11,4 +11,4 @@ Laboratório de Testes do Semantic UI.
 > Um layout de página com grid responsiva (layout estilo dashboard). 
 
 * [Layout 03](layout-03.html)
-> Teste de layout usando rails
+> Um layout com sidebar sempre-visível. (este layout não usa os padrões do semantic ui. Foram feitos scritps e styles para simular a funcionalidade)
