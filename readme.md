@@ -12,3 +12,7 @@ Laboratório de Testes do Semantic UI.
 
 * [Layout 03](layout-03.html)
 > Um layout com sidebar sempre-visível (este layout não usa os padrões do semantic ui. Foram feitos scritps e styles para simular a funcionalidade).
+
+## Links
+
+* [Exemplo de Side Bar](http://jsfiddle.net/hwc9sLb9/).
